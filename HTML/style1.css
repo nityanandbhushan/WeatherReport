@@ -1,0 +1,15 @@
+#name{ 
+    height: 50px;
+    width: 200px;
+    border: 2px solit black;
+} 
+#fname{ 
+    height: 30px;
+    width: 5rem;
+    border: 2px solid black;
+} 
+#lname{ 
+    height: 30px;
+    width: 50%px;
+    border: 2px solid black;
+}

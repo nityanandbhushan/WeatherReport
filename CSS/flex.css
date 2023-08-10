@@ -1,0 +1,26 @@
+*{ 
+    align-items: center;
+}
+.main{ 
+    height: 400px;
+    width: 400px;
+    background-color: rgb(237, 243, 243);  
+    border: 3px solid aqua;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: space-evenly;
+
+} 
+.main div{ 
+    height: 100px; 
+    width: 100px; 
+    background-color: rgb(104, 101, 101); 
+    border: 3px solid rgb(40, 37, 37);  
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;  
+    font-size: 25px;
+}

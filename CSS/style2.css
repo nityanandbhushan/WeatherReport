@@ -1,0 +1,57 @@
+
+.main-content{ 
+    background-color:rgb(248, 233, 233);
+
+} 
+
+.man:hover{ 
+    box-shadow:  5px 9px 16px black;
+
+} 
+.woman:hover{ 
+    box-shadow:  5px 9px 16px black;
+}
+.man
+{ 
+    height: 330px; 
+    width: 220px;
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgb(229, 239, 239); 
+    margin: 0 auto;
+
+} 
+
+img{ 
+    height: 200px; 
+    width: 220px;
+    box-shadow: 2px 4px 10px black;
+    display: inline-block;
+    background-color: pink; 
+    border-radius: 10px; 
+    background-color: rgb(229, 239, 239);
+     
+    
+}
+.woman
+{ 
+    height: 330px; 
+    width: 220px;
+    border: 2px solid black;   
+    display: inline-block;
+    border-radius: 10px; 
+    background-color: rgb(229, 239, 239);
+    margin: 0 auto;
+    
+
+    
+} 
+.minfo
+{ 
+    padding:5px;
+} 
+.winfo
+{ 
+    padding: 5px;
+}

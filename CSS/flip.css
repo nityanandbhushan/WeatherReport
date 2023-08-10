@@ -1,0 +1,39 @@
+.content{ 
+    height: 80px;  
+    background-color: blue; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start; 
+    justify-content: space-evenly;
+}  
+.content img{ 
+    height: 20px;
+}
+.small{ 
+    height: 20px; 
+    width: 40px; 
+} 
+.content{ 
+    color: white; 
+    font-size:10px;
+} 
+.text a{ 
+    color: white;
+} 
+.textdeco{ 
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly; 
+} 
+.text a{ 
+    text-decoration: none;
+} 
+.plus{ 
+    color: yellow;
+} 
+.small img{ 
+    height:12px;
+}
+.search{ 
+    
+}

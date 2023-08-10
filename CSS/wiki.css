@@ -1,0 +1,33 @@
+.header{ 
+    display: flex; 
+    flex-direction: row; 
+}
+.trippleline{ 
+    height: 10px; 
+    width: 14px; 
+    background-color: pink;
+    border: 2px solid black;
+} 
+.searchbar{  
+    height: 100px; 
+    width: 300px; 
+  
+   
+}  
+a{ 
+    text-decoration: none;
+}
+.trippledot{ 
+    height: 10px; 
+    width: 14px ;
+} 
+.text img{  
+    display: flex; 
+    flex-direction: column;
+    height: 100px; 
+    width: 50px;
+} 
+.earth{ 
+    height: 80px; 
+    width: 50px;
+}

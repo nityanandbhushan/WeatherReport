@@ -1,0 +1,55 @@
+
+h1{ 
+    text-align: center;
+}
+.maincontent{ 
+    height: 300px; 
+    width: 80%;
+    border: 4px solid black; 
+    background-color:black;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row-reverse;
+} 
+.v{ 
+    
+    background-color: violet;
+
+} 
+.i{ 
+   
+    background-color:indigo;
+
+}
+.b{  
+   
+    background-color: blue;
+
+} 
+.g{ 
+    
+    background-color: green;
+
+} 
+.y{  
+    
+    background-color: yellow;
+
+} 
+.o{  
+   
+    background-color:orange;
+
+} 
+.r{ 
+   
+    background-color: red;
+
+}  
+.maincontent div{ 
+    text-align: center;
+    height: 100px; 
+    width: 300px;
+    color: white; 
+    font-size: 1em;
+}
