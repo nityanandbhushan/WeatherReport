@@ -1,0 +1,39 @@
+*{ 
+    text-align: center;
+}  
+body{ 
+    background-color: aqua;
+}
+.box{ 
+    height: 100px; 
+    width: 100px;
+    background-color: green;
+    border: 5px solid black;
+    margin: 10px; 
+    border-radius: 100px;
+} 
+#box-container{ 
+    display: flex; 
+    justify-content: center;
+}
+.red{ 
+    background-color: red;
+} 
+.blue{ 
+    background-color: blue;
+} 
+.yellow{ 
+    background-color: yellow;
+} 
+.green{ 
+    background-color: green;
+} 
+.flash{ 
+    background-color: #fff;
+}
+.usrFlash{ 
+    background-color: black;
+}
+.redBluepart{ 
+    border-right:2px dashed white;
+}
