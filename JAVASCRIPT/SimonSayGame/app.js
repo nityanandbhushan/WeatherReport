@@ -1,5 +1,5 @@
-let hthree=document.querySelector('h3'); 
-let bdy=document.querySelector('body');  
+let hthree=document.querySelector("h3"); 
+let body=document.querySelector("body");  
 let colrAry=["red","yellow","blue","green"];
 
 let gameSeq=[]; 
@@ -7,24 +7,22 @@ let userSeq=[];
 
 let level=0;
 let start=false;
-
-bdy.addEventListener('click',function(){ 
+document.addEventListener('click',function(){ 
     if(start==false){ 
         start=true; 
         levelUp();
+    } else{ 
+        reset();
     }  
-}) 
+});  
 
-function bttnFlash(btn){
-    btn.classList.add("flash");
-    setTimeout(function(){ 
-        btn.classList.remove("flash");
-    },150)
-} 
+
 function levelUp()
-{   
+{ 
+    userSeq=[];
     level++; 
     hthree.innerText=`Level ${level}`;
+
 
     let randColId=Math.floor(Math.random() *3);  
     let randColor=colrAry[randColId];
@@ -35,41 +33,57 @@ function levelUp()
 }   
 
 
+function bttnFlash(btn){
+    btn.classList.add("flash");
+    setTimeout(function(){ 
+        btn.classList.remove("flash");
+    },150);
+}   
+
+
+function bttnPress(){  
+    let btn=this;
+    userPreBtnFla(btn); 
+   usrColor=btn.getAttribute("id");
+   userSeq.push(usrColor);
+   checkAns(userSeq.length-1);
+} 
+
+
+
 function userPreBtnFla(btn){
     btn.classList.add("usrFlash");
     setTimeout(function(){ 
         btn.classList.remove("usrFlash");
-    },150)
+    },150);
 } 
 
-
-function bttnPress(){ 
-    let btn=this;
-    // console.log(this); 
-    userPreBtnFla(btn); 
-   let  usrColor=btn.getAttribute("id");
-   console.log(usrColor);
-   userSeq.push(usrColor);
-   checkAns();
-   
-
-
+function checkAns(idx){ 
+    if(userSeq[idx]===gameSeq[idx]){ 
+        if(userSeq.length == gameSeq.length){  
+            setTimeout(levelUp,1000)
+        }
+    }else{ 
+        hthree.innerHTML=`Game Over! Your score was ${level} <b> Press any Key to Start the game! </b>`; 
+        
+        document.querySelector('body').style.backgroundColor='red';
+        setTimeout(function(){ 
+            document.querySelector('body').style.backgroundColor='white';
+        },150);    
+        
+    }  
 } 
 
-let allBtn=document.querySelectorAll('.box'); 
-
+let allBtn=document.querySelectorAll(".box"); 
 for(btn of allBtn){ 
-    btn.addEventListener('click',bttnPress);
+    btn.addEventListener("click",bttnPress);
 }  
 
 
-function checkAns(){ 
-    // console.log("Curr Level is:",level); 
-    let idx=level-1;
-    if(userSeq[idx]===gameSeq[idx]){ 
-        console.log("Same Value");
-    }else{ 
-        hthree.innerText="Game over! Press any key to start.";
-    }
+function reset(){  
+    start=false;
+    gameSeq=[]; 
+    userSeq=[]; 
+    level=0;
 }
 

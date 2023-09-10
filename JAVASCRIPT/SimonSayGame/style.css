@@ -35,5 +35,5 @@ body{
     background-color: black;
 }
 .redBluepart{ 
-    border-right:2px dashed white;
+    border-right:2px dashed rgb(5, 5, 5);
 }
