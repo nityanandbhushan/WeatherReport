@@ -1,0 +1,32 @@
+@media screen and (max-width:1400px){ 
+#desktop-nav{ 
+    display: none;
+} 
+*body{ 
+    align-items: center;
+}
+    #hamburger-nav{ 
+        display: flex;
+    }
+    #profile{ 
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    #about{ 
+        margin-top: 20px;
+        display: flex; 
+        flex-direction: column;
+        justify-items: center;
+        
+    } 
+    .section-container{ 
+        display: flex; 
+        flex-direction: column;
+        height: 100%;
+    } 
+    .about-container{ 
+        flex-wrap: wrap;
+    }
+
+} 
