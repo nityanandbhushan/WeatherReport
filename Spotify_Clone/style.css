@@ -1,0 +1,298 @@
+body{ 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+    margin: 0; 
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    } 
+    .main{ 
+        display: flex; 
+        height: 100vh;
+        padding: .45rem;
+    }  
+    .sidebar{ 
+        width: 340px; 
+        border-radius: 1rem;/*16px*/
+        background-color: #000; 
+    } 
+    .main-content{ 
+       
+        background-color: blue;
+        flex: 1; 
+        border-radius: 1rem;/*16px*/ 
+        overflow: auto;
+        background-color: #121212;
+        margin-left: .6rem;
+    } 
+    .music-player{ 
+     
+        background-color: yellow;
+        position: fixed; 
+        bottom: 0; 
+        width: 100%; 
+        background-color: #121212;
+    } 
+    a{ 
+        text-decoration: none; 
+        color:#fff;
+    } 
+    .nav{  
+        background-color: #121212;
+        border-radius: 1rem;
+        height: 100px;
+        padding: 0.5rem 0.75rem; 
+    
+     
+    } 
+    .sticky-nav{ 
+        position: sticky;
+    } 
+    .nav-option{  
+        line-height: 2.5rem; 
+        opacity: 0.7;
+    
+    } 
+    .nav-option:hover{ 
+        opacity: 1;
+    }
+    .nav-option i{ 
+        font-size: 1.25rem;
+    } 
+    .nav-option a{ 
+        font-size: 1rem; 
+        margin-left: 1rem;
+    }
+    .library{ 
+        background-color: #121212;
+        border-radius: 1rem;
+        padding: 0.5rem 0.75rem;  
+        height: 100%; 
+        margin-top: .5rem;
+        
+    }
+    .options{ 
+        display: flex; 
+        justify-content: space-between; 
+        padding: 0.5rem 0.25rem; 
+        opacity: 0.7;
+        
+    } 
+    .icons{ 
+        display: flex;
+        
+    }
+    .lib-options img{ 
+        height: 1.25rem; 
+        width: 1.25rem; 
+        font-size: 1.25rem; 
+        opacity: 0.7;
+       
+    }   
+    .lib-options a{ 
+        margin-left: 1rem;
+        opacity: 0.7;
+    } 
+    .icons i{  
+        font-size: 1.2rem;
+        opacity: 0.5;
+    
+    } 
+    .lib-options:hover{ 
+        opacity: 1; 
+    
+    }
+    .icons i:hover{ 
+        opacity: 1;
+    }
+    .lib-options img:hover{ 
+        opacity: 1;
+    }
+    .lib-options a:hover{ 
+        opacity: 1;
+    }   
+    .icons i{ 
+        margin-left: 1rem;
+    } 
+    .boxes{ 
+        margin-top: 1.3rem;
+       background-color: #232323; 
+       line-height: 1rem; 
+        padding: 1rem ; 
+        border-radius: 1rem;
+        height: 8rem; 
+    
+    } 
+    .boxes,.box1,.box2{  
+        line-height: 2.3rem;  
+    }  
+    .box1{ 
+        font-size: 1rem;
+        font-weight: 700;
+        color:#e6e0e0;
+    } 
+    .box2{ 
+        opacity: .9; 
+        font-size: .8rem;
+    } 
+    button{ 
+        height: 2.2rem; 
+        width: 9rem; 
+        border-radius:50px; 
+        font-size: .8rem; 
+        font-weight:650; 
+        margin-top: .8rem; 
+        text-align: center; 
+        border: none; 
+    } 
+    .iconstwo,.iconsone { 
+       
+        display: flex; 
+        justify-content: center; 
+        text-align: center;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%; 
+        background-color: black;
+    } 
+    .icon{ 
+        cursor: pointer;
+        height: 35px; 
+        width: 70px;
+        padding: 10px 0px 0px 10px;
+        display: flex;
+        justify-content: space-between;
+       
+        
+    } 
+    .sticky-nav{  
+        position: sticky;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+    }   
+    .nav-item{  
+        margin-right: 1rem;
+    
+    }    
+    .boxtwo button{ 
+        margin-left: 1rem;
+    }
+     
+    .box-shadow button{ 
+        background-color: #000; 
+        color: white;
+    } 
+    .box-shadow button i{ 
+        margin: .4rem;
+    }  
+    .boxtwo span{ 
+        margin-right: 1rem;
+    } 
+    @media (max-width:1000px){ 
+        .iconstwo,.hide{ 
+            display: none;
+    
+        }
+    } 
+    .cards{ 
+        margin-left: 1rem;
+    } 
+    .card{
+        background-color: #232323;
+        width: 150px; 
+        border-radius: 1rem; 
+        padding: 1rem;
+    } 
+    
+    
+    .img-tag{ 
+        width: 100%;
+        border-radius: 1rem;
+    } 
+    .card-titel{ 
+        font-weight:600;
+    }
+    .card-info{ 
+        font-size: .85rem; 
+        opacity: .8;
+    }   
+    .cardthree{ 
+        display: flex; 
+        flex-wrap: wrap; 
+        padding: 1rem; 
+        justify-content: space-evenly;
+        padding-bottom: 1rem;
+    }
+    .cardfour{ 
+        display: flex; 
+        flex-wrap: wrap; 
+        padding: 1rem; 
+        justify-content: space-evenly;
+        padding-bottom: 1rem;
+    } 
+    .footer{  
+        display: flex;
+        height: 350px; 
+        justify-content: center;
+    } 
+    .line{ 
+        width: 90%; 
+        height: 30% ; 
+        border-top: 2px solid #877c7c;  
+    
+    }  
+    .music-player{ 
+        display: flex; 
+        justify-content: space-evenly;
+        justify-content: center; 
+        align-items: center;
+    }
+    .progrebar img { 
+        height: 20px;
+        width: 20px; 
+        margin: .6rem;
+       
+    }  
+    .songprofile{ 
+        display: flex; 
+        justify-content: space-evenly;  
+        justify-content: center; 
+        align-items: center;
+    }
+    .songprofile img{ 
+        height: 50px; 
+        width: 50px;
+        margin: 1rem;
+        justify-content: center; 
+        align-items: center;
+    } 
+    .songprofile h2{ 
+        font-size: .6rem;
+    } 
+    .songprofile p{ 
+        font-size: .6rem;
+    } 
+    .songname{ 
+        line-height: .4px; 
+        margin: .6rem;
+    } 
+    span,i{ 
+        margin: .5rem;
+    } 
+    input[type="range"]{ 
+        height: 1rem; 
+        width: 3rem; 
+        color: white;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
