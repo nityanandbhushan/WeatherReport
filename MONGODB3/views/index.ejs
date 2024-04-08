@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <div><h1>Whats App Chats</h1>
+    </div> 
+    <%for(item of data){%>
+        <div class="chats" >
+            <p class="from">From:<%=item.from%></p>
+            <div class="msg" style="background-image:url('https://i.pinimg.com/564x/29/51/8d/29518df9a720818938a3a58cf6c026df.jpg');">
+                <p><%=item.message%></p>
+            </div>
+            <p class="to">to:<%=item.to%></p>
+            <p class="date">Date:<%=item.creat_at%></p>
+        </div>
+        
+        <a href="http://localhost:3000/chats/<%=item.id%>/edit">EditChat</a>
+        <hr>
+    <%}%> 
+   
+    <a href="http://localhost:3000/chats/new">Create New Chats</a>
+    
+</body>
+</html>

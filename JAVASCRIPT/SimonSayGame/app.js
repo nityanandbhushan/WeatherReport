@@ -16,7 +16,6 @@ document.addEventListener('click',function(){
     }  
 });  
 
-
 function levelUp()
 { 
     userSeq=[];
@@ -24,9 +23,9 @@ function levelUp()
     hthree.innerText=`Level ${level}`;
 
 
-    let randColId=Math.floor(Math.random() *3);  
+    let randColId=Math.floor(Math.random()*3);  
     let randColor=colrAry[randColId];
-    let randmBtn=document.querySelector(`.${randColor}`)
+    // let randmBtn=document.querySelector(`.${randColor}`); // testing period
     gameSeq.push(randColor);
     console.log(gameSeq);
     bttnFlash(randmBtn);

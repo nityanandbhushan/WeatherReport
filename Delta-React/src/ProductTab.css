@@ -1,0 +1,7 @@
+.productTab{ 
+    display: flex;
+    justify-content: center;
+}
+.productPrice{ 
+    justify-content: center;
+}

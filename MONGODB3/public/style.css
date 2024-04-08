@@ -1,0 +1,19 @@
+.msg{ 
+    height: 100px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.from{
+    background-color: rgb(86, 81, 81);
+} 
+.to{
+    background-color: rgb(86, 81, 81);
+
+} 
+.date{ 
+    background-color: rgb(86, 81, 81);
+
+
+}

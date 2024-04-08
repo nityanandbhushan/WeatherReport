@@ -1,0 +1,13 @@
+.productPrice{ 
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 12px;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 30px; 
+    width: 150px;
+    background-color: rgb(72, 72, 4);
+}

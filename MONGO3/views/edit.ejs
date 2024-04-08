@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+</head>
+<body>  
+    <h2>Edit Your chat :<%=chat._id%></h2> 
+<p>This chat was sent from <%=chat.from%> to <%=chat.to%></p>
+    <form method="post" action="/chats/<%=chat._id%>?_method=PUT">
+     
+        <textarea value="<%=chat.msg%>"name="msg" cols="10" rows="10"><%=chat.msg%>
+        
+        </textarea>
+        <button>Edit</button>
+    </form>
+
+</body>
+</html>

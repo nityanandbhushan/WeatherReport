@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get && Post</title> 
-
+    <title>Document</title>
 </head>
-<body>  
-    <h3>Get Request</h3>
-    <form method="get" action="/register"> 
-        <input type="text" placeholder="enter username" name="user">
-        <input type="password" placeholder="enter your password" name="password"> 
+<body> 
+    <h1>Get Method For Form Submitted</h1>
+    <form method="get" action="/register">
+        <input type="text" placeholder="Enter User ID" name="user"> 
+        <input type="password"  placeholder="Enter Your Password" name="password" >
         <button>Submit</button>
     </form>   
-    <br>
-    <hr> 
-   
-    <h3>Post Request</h3>
-    <form action="/register" method="post">  
-        <input type="text" placeholder="enter username" name="user">
-        <input type="password" placeholder="enter your password" name="password">  
-        <button>Submit</button>
 
+    <hr>  
+    <h1>Post Method For Form Submitted</h1>
+
+    <form  method="post" action="/register">
+        <input type="text" placeholder="Enter User ID" name="user"> 
+        <input type="password"  placeholder="Enter Your Password" name="password" >
+        <button>Submit</button>
     </form>
+
     
 </body>
 </html>

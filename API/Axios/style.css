@@ -1,0 +1,21 @@
+body{ 
+    text-align: center;
+}  
+
+
+h2{ 
+    background-color: rgb(218, 218, 254);
+}
+
+p{   
+    text-align: left;
+    height: 80px; 
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: rgb(163, 151, 151);
+}
+
+.bttn,#btn2{ 
+    margin-left: 10px;
+}

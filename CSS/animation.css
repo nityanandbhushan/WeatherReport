@@ -1,4 +1,4 @@
-.container{ 
+/* .container{ 
     height: 300px; 
     width: 400px; 
     border: 2px solid black; 
@@ -26,4 +26,18 @@
     to{font-size:50px;
     border-radius: 15px;}
     
+} */ 
+
+.container{ 
+    height: 500px; 
+    width: 500px;
+    background-color: red;
+    text-align: start; 
+    font-weight: light;
+}
+.container1{ 
+    text-align: center;
+    height: 100px;
+    width: 500px;
+    background-color: blue;
 }

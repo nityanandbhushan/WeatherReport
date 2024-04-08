@@ -1,0 +1,7 @@
+.boxBody{ 
+    margin-top: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+} 

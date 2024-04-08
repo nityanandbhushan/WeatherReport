@@ -1,22 +1,44 @@
-let btton=document.querySelector("button"); 
-btton.addEventListener("click" , async ()=>{ 
-    let get= await getFacts(); 
-    let para=document.querySelector("p"); 
-    para.innerText=get; 
-});
 
-let url="https://catfact.ninja/docs/api-docs.json"; 
 
-async function getFacts(){  
+// fetch(url)
+// .then((response)=>{  
+//     console.log(response);
+//     return response.json();
+// })  
+// .then((res)=>{ 
+//     console.log(res.fact);
+//     // return 
+//     return fetch(url);
+// })
+// .then((resp)=>{ 
+//     return resp.json();
+// })
+// .then((fac)=>{ 
+//     console.log(fac.fact);
+// })
+// .catch((error)=>{  
+//     console.log(error);
+// })  
+
+let url="https://catfact.ninja/fact"; 
+
+async function getFetchData(){ 
     try{ 
-        let res= await axios.get(url);  
-        return res.data.fact;
-    } 
-    catch(e){ 
-        console.log("finding some error",e); 
-        return " No fact Found";
+    let respons=await fetch(url); 
+    let data=await respons.json(); 
+    console.log(data.fact);
 
-    }
+    } 
+   catch(error){ 
+    console.log(error); 
+
+   } 
+   console.log("bii");
+
+    
 }  
+getFetchData();
+
+
 
 

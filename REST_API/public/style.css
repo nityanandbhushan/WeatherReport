@@ -1,0 +1,14 @@
+div{
+    height: 100px; 
+    width: 100%;
+    background-color: pink;
+}  
+#see{
+    margin-left: 10px;    
+}
+#delete{ 
+    margin-left: 10px;
+}
+h1{ 
+    color: red;
+}
